@@ -1,0 +1,21 @@
+.if() {
+  display: flex;
+}
+.if-row() {
+  flex-direction: row;
+}
+.if-col() {
+  flex-direction: column;
+}
+.is-flex {
+  .if();
+  flex: 1;
+}
+.is-flex-row {
+  .if();
+  .if-row();
+}
+.is-flex-col {
+  .if();
+  .if-col();
+}
