@@ -192,19 +192,19 @@ label {
 .wrapper header nav ul li.nav-item {
   padding: 15px;
 }
-.wrapper header nav ul li.nav-item.is-branding {
+.wrapper header nav ul li.nav-item.is-branding .brand-logo {
   border-radius: 50%;
   width: 130px;
   height: 130px;
   overflow: hidden;
   margin: 1.5rem auto;
 }
-.wrapper header nav ul li.nav-item.is-branding img {
+.wrapper header nav ul li.nav-item.is-branding .brand-logo img {
   margin-left: -70%;
   margin-top: -15%;
   display: inline;
   border-radius: 0;
-  width: 200px;
+  width: 221px;
 }
 .wrapper header nav ul li.nav-item.menu-item {
   padding: 0;
@@ -304,9 +304,59 @@ label {
 .wrapper .content-wrapper .footer p {
   text-align: center;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .wrapper {
     flex-direction: row;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper header {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  .wrapper header nav {
+    width: 100%;
+    border-bottom: 4px solid #efefef;
+  }
+  .wrapper header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+  }
+  .wrapper header nav ul li.nav-item.is-branding {
+    width: 100%;
+  }
+  .wrapper header nav ul li.nav-item.menu-item {
+    width: 25%;
+    flex: 1;
+  }
+  .wrapper header nav ul li.nav-item.menu-item a {
+    padding: 15px;
+    display: block;
+    text-align: center;
+  }
+  .wrapper header nav ul li.nav-item.menu-item a:hover {
+    color: #ffffff;
+    background-color: #7f7f7f;
+    padding-left: 15px;
+    border-left: 0;
+  }
+  .wrapper header nav ul li.nav-item.menu-item a.active,
+  .wrapper header nav ul li.nav-item.menu-item a:active {
+    color: #ffffff;
+    background-color: #ff9900;
+    padding-left: 15px;
+    border-left: 0px solid #ff9900;
+  }
+  .wrapper .content-wrapper {
+    width: 100%;
+    margin-left: 0;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -318,6 +368,40 @@ label {
   .wrapper header {
     width: 100%;
     position: relative;
+  }
+  .wrapper header nav {
+    width: 100%;
+    border-bottom: 4px solid #efefef;
+  }
+  .wrapper header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+  }
+  .wrapper header nav ul li.nav-item.is-branding {
+    width: 100%;
+  }
+  .wrapper header nav ul li.nav-item.menu-item {
+    width: 100%;
+    flex: auto;
+  }
+  .wrapper header nav ul li.nav-item.menu-item a {
+    padding: 15px;
+    display: block;
+    text-align: center;
+  }
+  .wrapper header nav ul li.nav-item.menu-item a:hover {
+    color: #ffffff;
+    background-color: #7f7f7f;
+    padding-left: 15px;
+    border-left: 0;
+  }
+  .wrapper header nav ul li.nav-item.menu-item a.active,
+  .wrapper header nav ul li.nav-item.menu-item a:active {
+    color: #ffffff;
+    background-color: #ff9900;
+    padding-left: 15px;
+    border-left: 0px solid #ff9900;
   }
   .wrapper .content-wrapper {
     width: 100%;
