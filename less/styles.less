@@ -39,12 +39,27 @@ h1, h2, h3, h4, h5, h6, label {
                 width: 200px;
               }
             }
-            &.menu-item {}
-          }
-          a {
-            font-family: 'Merriweather', @font-family-default;
-            text-decoration: none;
-            padding-left: 10px;
+            &.menu-item {
+              padding: 0;
+              a {
+                font-family: 'Merriweather', @font-family-default;
+                text-decoration: none;
+                padding: 15px 15px 15px 40px;
+                color: #000000;
+                display: block;
+                &:hover {
+                  color: #7f7f7f;
+                  padding-left: 35px;
+                  border-left: 5px solid #7f7f7f;
+                }
+                &.active,
+                &:active {
+                  color: #ff9900;
+                  padding-left: 35px;
+                  border-left: 5px solid #ff9900;
+                }
+              }
+            }
           }
         }
       }
@@ -55,12 +70,11 @@ h1, h2, h3, h4, h5, h6, label {
     margin-left: 200px;
     background-color: #fff;
     .spotlight {
-      border-bottom: 4px solid #bfbfbf;
+      border-bottom: 4px solid #efefef;
       padding: 5rem;
       text-align: center;
       h1 {
-        font-size: 60px;
-        margin-bottom: 0rem;
+        font-size: 75px;
       }
       .sub-title {
         font-size: 30px;
